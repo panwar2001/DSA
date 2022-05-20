@@ -37,3 +37,34 @@ int lowerbound(vector<int>&v,int x)
 	}
   return l;	
 }
+//finding first and last position of an element in the array easy binary search method
+//https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+class Solution {
+public:
+    vector<int> searchRange(vector<int>& nums, int target) {
+      vector<int>pos(2,-1);
+        int l=0,r=nums.size()-1,mid;
+		//first position of the element 
+         while(l<=r){
+             mid=l+(r-l)/2;
+             if(nums[mid]==target){
+                 pos[0]=mid;
+                 r=mid-1;
+             }
+             else if(nums[mid]<target)l=mid+1;
+             else r=mid-1;
+         }
+        //last position of the element 
+        l=0,r=nums.size()-1,mid;
+        while(l<=r){
+            mid=l+(r-l)/2;
+            if(nums[mid]==target){
+                pos[1]=mid;
+                l=mid+1;
+            }
+            else if(nums[mid]<target)l=mid+1;
+            else r=mid-1;
+        }
+        return pos;
+    }
+};
