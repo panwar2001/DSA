@@ -1,0 +1,8 @@
+//it is prefered to use struct rather than vector , pair is prefered over vector
+priority_queue<dataType,vector<dataType>,compare);
+//Example for maxHeap, less than symbol  is  used, operator function is overloaded
+struct compare{
+    bool operator()(point& a,point& b){
+        return a.dist<b.dist;
+    }
+};
