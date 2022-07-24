@@ -2,6 +2,7 @@
 // n = length of the array
 // k = search key
 // returns "true" if the key is found, "false" otherwise
+
 bool search(int x[], int n, int k) {
     int l = 0, r = n-1;
     while (l <= r) {
@@ -12,6 +13,8 @@ bool search(int x[], int n, int k) {
     return false;
 }
 
+/*lower_bound returns an iterator pointing to the first element in the range [first,last) which has a value not less than ‘val’. */
+/*upper_bound returns an iterator pointing to the first element in the range [first,last) which has a value greater than ‘val’.*/
 /*upper bound logic*/
 int upperbound(vector<int>&v,int x)
 {
