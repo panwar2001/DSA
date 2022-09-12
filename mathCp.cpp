@@ -59,3 +59,6 @@ int ncr(int n,int r){
   if(r>n||n<0||r<0)return 0;
   return fact[n]*invfact[r]%PRIME*invfact[n-r]%PRIME;
 }
+__________________________________________________________________
+xor formulas
+a^b=a+b-(a&b)
