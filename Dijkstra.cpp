@@ -22,7 +22,9 @@ public:
         vector<int>dist(n+1,INT_MAX);
         dist[k]=0;
         vector<pii>g[n+1];
-        for(auto& i:times) g[i[0]].push_back({i[2],i[1]});
+        for(auto& i:times) 
+         g[i[0]].push_back({i[2],i[1]});
+         
         priority_queue<pii,vector<pii>,greater<pii>>pq;
         pq.push({0,k});
         pii u;

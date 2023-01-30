@@ -8,7 +8,7 @@ void heapify(vector<int>& heap){
 	  i=(i-1)/2;
 	}
 }
-int popTop(vector<int>& heap){
+int popTop(vector<int>& heap){ //percolating down ( swap with minimum )
    int top=heap.front();
    heap[0]=heap.back();
    heap.pop_back();
@@ -16,7 +16,7 @@ int popTop(vector<int>& heap){
    while(i<l){
      if(2*i+2<l){
         if(heap[i]<=heap[2*i+1]&&heap[i]<=heap[2*i+2])break;
-        if(heap[2*i+1]<heap[2*i+2]){
+        if(heap[2*i+1]<heap[2*i+2]){  swapping with minimum 
           swap(heap[i],heap[2*i+1]);
           i=2*i+1;
            }
