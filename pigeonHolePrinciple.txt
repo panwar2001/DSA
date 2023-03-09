@@ -1,0 +1,1 @@
+the pigeonhole principle: if the number of pigeons (paths) exceeds the number of holes (XOR values), then two pigeons must share a hole (two paths must share a XOR value).
