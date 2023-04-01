@@ -1,0 +1,27 @@
+{
+"cmd": ["g++.exe","-std=c++17","${file}", "-O2","-Wall","-o","${file_base_name}.exe", "&&" , "${file_base_name}.exe<input.in","2>error.err>output.out","&&","echo","/*","Generated: %date% %time%","*/",">submit.cpp","&&","type","practice.cpp>>submit.cpp"],
+"selector":"practice.cpp",
+"shell":true,
+"working_dir":"$file_path"
+}
+
+{
+"cmd": ["g++.exe","-std=c++17","${file}", "-O2","-Wall","-o","${file_base_name}.exe", "&&" , "${file_base_name}.exe<input.in","2>error.err>output.out","&&","echo","/**>submit.cpp","&&","echo","**Generated-%date%%time%",">>submit.cpp","&&","echo","**author-panwar2001",">>submit.cpp","&&","echo","**/>>submit.cpp","&&","type","practice.cpp>>submit.cpp"],
+"selector":"practice.cpp",
+"shell":true,
+"working_dir":"$file_path"
+}
+//date format : date/month/year , time format: 12 hr format
+{
+"cmd": ["g++.exe","-std=c++17","${file}", "-O2","-Wall","-o","${file_base_name}.exe", "&&" , "${file_base_name}.exe<input.in","2>error.err>output.out","&&","echo","/**>submit.cpp","&&","echo","|time/t",">>submit.cpp","&&","echo","|date/t",">>submit.cpp","&&","echo","author-panwar2001",">>submit.cpp","&&","echo","**/>>submit.cpp","&&","type","practice.cpp>>submit.cpp"],
+"selector":"practice.cpp",
+"shell":true,
+"working_dir":"$file_path"
+}
+//linux 
+{
+"cmd": ["g++ ${file} -o practice.exe && ./practice.exe<input.in 2>error.err>output.out && dat=`date` && sed -i \"3s/.*/ * Generated:  \\$dat /\" ${file}"],
+"selector":"practice.cpp",
+"shell":true,
+"working_dir":"$file_path"
+}

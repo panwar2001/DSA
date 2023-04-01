@@ -1,0 +1,28 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * author: panwar2001
+ *
+ **/
+#include<bits/stdc++.h>
+using namespace std;
+#define fastio() ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL)
+#ifndef ONLINE_JUDGE
+#include <algodebug>
+#else
+#define debug(...)
+#endif
+#define ll long long
+#define mod (ll)(1e9+7)
+#define tc ll t;cin>>t;while(t--)
+
+void solve(){
+
+}
+int main() {
+  fastio();
+  solve();
+}
+]]></content>
+<tabTrigger>codeforces</tabTrigger> 
+</snippet>

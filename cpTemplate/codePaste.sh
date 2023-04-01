@@ -1,0 +1,1 @@
+g++.exe -std=c++17 C:\Users\DUN\Desktop\Practice\practice.cpp -O2 -Wall -o practice.exe && practice.exe<input.in 2>error.err>output.out && echo -e -n "/**\n *  author: panwar2001\n *  created: ">submit.cpp && date +"%c">>submit.cpp && echo "**/">>submit.cpp && cat ./practice.cpp>> submit.cpp
