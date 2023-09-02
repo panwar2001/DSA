@@ -25,3 +25,10 @@
 "shell":true,
 "working_dir":"$file_path"
 }
+//kali linux
+{
+"cmd": ["g++ -std=c++17 -O2 -Wall -Wextra -Wshadow -Wno-sign-conversion ${file} && ./a.out<input.in>output.txt"],
+"selector":"practice.cpp",
+"shell":true,
+"working_dir":"$file_path"
+}
